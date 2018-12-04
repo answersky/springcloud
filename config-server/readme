@@ -1,0 +1,11 @@
+访问失败：
+    
+    原因分析：jdk版本问题，查阅资料，反馈需要jdk1.8才支持，
+    jdk1.7访问出现如下问题：
+        javax.net.ssl.SSLException: Received fatal alert: protocol_version
+        	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208) ~[na:1.7.0_79]
+        	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154) ~[na:1.7.0_79]
+        	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:1979) ~[na:1.7.0_79]
+        	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1086) ~[na:1.7.0_79]
+        	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1332) ~[na:1.7.0_79]
+        	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1359) ~[na:1.7.0_79]
